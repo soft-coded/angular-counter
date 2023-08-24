@@ -7,17 +7,15 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent {
   counterValue = 0;
-  inputValue = 0;
+  inputValue = 1;
 
   constructor() {}
 
   incrementCounter() {
-    this.counterValue += 1;
+    this.counterValue += this.inputValue;
   }
 
   decrementCounter() {
-    if (this.counterValue <= this.inputValue) return;
-
-    this.counterValue -= 1;
+    this.counterValue -= this.inputValue;
   }
 }
