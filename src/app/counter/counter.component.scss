@@ -17,6 +17,7 @@ $transition-properties: 0.2s ease-out;
   flex-direction: column;
   gap: calc(2.5 * var(--spacing-mid));
   padding: var(--spacing-xl);
+  box-shadow: 0 0 10px rgb(145, 145, 145);
 
   h2 {
     font-weight: 600;
@@ -62,5 +63,6 @@ $transition-properties: 0.2s ease-out;
     background-color: #e6e6e6;
     border: none;
     padding: var(--spacing-xs) var(--spacing-sm);
+    box-shadow: 0 0 5px rgb(170, 170, 170);
   }
 }
