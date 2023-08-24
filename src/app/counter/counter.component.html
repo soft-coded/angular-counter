@@ -1,1 +1,12 @@
-<p>counter works!</p>
+<div class="counter-wrapper">
+  <div class="counter-container">
+    <h2>Counter App</h2>
+    <hr />
+    <div class="counter-display">
+      <p (click)="incrementCounter()">+</p>
+      <strong>{{ counterValue }}</strong>
+      <p (click)="decrementCounter()">-</p>
+    </div>
+    <input type="number" [(ngModel)]="inputValue" />
+  </div>
+</div>
